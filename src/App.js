@@ -28,6 +28,16 @@ function App() {
 		})
 	}
 
+	function handleChange(event) {
+		SetImgData(currImgData => {
+				return ({
+					...currImgData,
+					[event.target.name]: event.target.value
+				})
+		})
+	}
+	console.log(imgData);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -38,16 +48,22 @@ function App() {
 					type="text"
 					name="upperText"
 					placeholder='Upper Text'
+					onChange={handleChange}
 					value={imgData.upperText}
 				/>
 				<input 
 					type="text"
 					name="bottomText"
 					placeholder='Bottom Text'
+					onChange={handleChange}
 					value={imgData.bottomText}
 				/>
 				<button onClick={handleClick} className="img-btn">Get a New MEME Image</button>
-				<img src={imgData.memeUrl} alt="meme" />
+				<div className="meme">
+					<p className="upper">{imgData.upperText}</p>
+					<img src={imgData.memeUrl} alt="meme" />
+					<p className="bottom">{imgData.bottomText}</p>
+				</div>
 			</div>
     </div>
   );
