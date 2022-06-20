@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1ef52f0c.css",
+    "main.js": "/static/js/main.cb1bb794.js",
+    "static/media/meme-logo.jpeg": "/static/media/meme-logo.51300e2dcffabdb5e2cf.jpeg",
+    "index.html": "/index.html",
+    "main.1ef52f0c.css.map": "/static/css/main.1ef52f0c.css.map",
+    "main.cb1bb794.js.map": "/static/js/main.cb1bb794.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ef52f0c.css",
+    "static/js/main.cb1bb794.js"
+  ]
+}
